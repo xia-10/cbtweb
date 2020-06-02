@@ -6078,7 +6078,7 @@ blog-single-section
 	-moz-border-radius: 6px;
 	-ms-border-radius: 6px;
 	border-radius: 6px;
-	border-top: 3px solid #ffcd22;
+	border-top: 3px solid #2577e3;
 	padding: 45px 50px;
 }
 
@@ -6167,7 +6167,7 @@ blog-single-section
 .login-area .login-box form.login-form button {
 	font-size: 15px;
 	color: #fff;
-	background: #ffcd22;
+	background: #2577e3;
 	display: block;
 	width: 100%;
 	margin: 0 auto;
@@ -10456,9 +10456,10 @@ h2.title {
 	padding-left: 33px;
 }
 .group_dis_erweima_div_img {
+	position: relative;
 	float: right;
-	width: 65px;
-	height: 65px;
+	width: 75px;
+	height: 75px;
 	margin-top: -40px;
 	margin-right: -45px;
 	cursor: pointer;
@@ -10472,10 +10473,10 @@ h2.title {
 	display: none;
 }
 .moodin {
-	position: relative;
-	left: -33px;
-	top: -35px;
-	border-width: 33px;
+	position: absolute;
+    left: -17px;
+    top: 40px;
+    border-width: 26px;
 	border-style: solid;
 	border-color: #cdcdcd transparent transparent transparent;
 	transform: rotate(45deg);
