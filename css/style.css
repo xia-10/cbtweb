@@ -10560,7 +10560,6 @@ h2.title {
     display: inline-block;
     width: 49.3%;
     height: 46px;
-    padding: 0 5px;
     font-size: 13px;
     font-weight: 400;
     line-height: 1.5;
@@ -10572,4 +10571,19 @@ h2.title {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+.form-group-register {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
