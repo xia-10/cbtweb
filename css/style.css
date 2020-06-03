@@ -10558,7 +10558,7 @@ h2.title {
 }
 .custom-select-register {
     display: inline-block;
-    width: 49.3%;
+    width: 24.4%;
     height: 46px;
     font-size: 13px;
     font-weight: 400;
@@ -10586,4 +10586,16 @@ h2.title {
     border: 1px solid #ededed;
     border-radius: 3px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.color-org{
+	color: #ff9419;
+}
+.cur-poi{
+	cursor: pointer;
+}
+.login-box-big-w{
+	width: 800px !important;
+}
+.pull-right-my-integral{
+	float: right;
 }
