@@ -142,7 +142,7 @@
                     </li>
                 </ul>
                 <div class="col-sm-12">
-                     <ul class="nav nav-tabs tab-with-center-icon justify-content-center nav-justified">
+                    <ul class="nav nav-tabs tab-with-center-icon justify-content-center nav-justified">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#tab-8-1"> <i
                                     class="fab fa-accessible-icon"></i> 工作台 </a>
@@ -155,7 +155,7 @@
                             <a class="nav-link" data-toggle="tab" href="#tab-8-3"> <i class="fas fa-book-open"></i>
                                 自由行 </a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link " data-toggle="tab" href="#tab-8-4"> <i
                                     class="fab fa-accessible-icon"></i> 特价机票 </a>
                         </li>
@@ -214,100 +214,384 @@ feature box -->
             <div class="col-lg-3 col-md-12 col-xs-12">
                 <div class="blog-sidebar">
                     <div class="widget category-widget">
-                        <h3>我的积分</h3>
+                        <h3>旅游订单列表</h3>
                         <ul>
                             <li>
-                                <a href="https://preview.templatehouse.net/travelgo/pages-blog-leftsidebar.html#">积分详情</a>
+                                <a href="#">全部订单</a>
                             </li>
                             <li>
-                                <a href="https://preview.templatehouse.net/travelgo/pages-blog-leftsidebar.html#">兑换记录</a>
+                                <a href="#">跟团游-打包产品</a>
+                            </li>
+                            <li>
+                                <a href="#">跟团游-单地接</a>
+                            </li>
+                            <li>
+                                <a href="#">自由行</a>
+                            </li>
+                            <li>
+                                <a href="#">邮轮游</a>
                             </li>
                         </ul>
                     </div>
                     <div class="widget category-widget">
-                        <h3>我的代金券</h3>
+                        <h3>机票订单列表</h3>
                         <ul>
                             <li>
-                                <a href="https://preview.templatehouse.net/travelgo/pages-blog-leftsidebar.html#">代金券</a>
+                                <a href="#">全部订单</a>
                             </li>
+                            <li>
+                                <a href="#">国内机票</a>
+                            </li>
+                            <li>
+                                <a href="#">国际机票</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-12W col-xs-12">
-                <h2 class="login-mg-bottom">总积分:<span class="color-org">501176分</span>&nbsp&nbsp可用积分:<span
-                        class="color-org">499176分</span></h2>
+            <div class="col-md-9 mb-4">
+                <div class="list-group list-group-borderless mg-top-20">
+                    <div class="mg-pad">
+                        <div>
+                            <div>
+                                <label>订&nbsp单&nbsp号&nbsp：</label>
+                                <input class="form-control-list" type="text" placeholder="">
+                                <label>产品名称：</label>
+                                <input class="form-control-list" type="text" placeholder="">
+                                <label>订单状态：</label>
+                                <select class="custom-select custom-select-list select-big login-pd-left-20">
+                                    <option selected="">所有</option>
+                                    <option value="location1">未处理</option>
+                                    <option value="location2">待提交名单</option>
+                                    <option value="location3">待确认</option>
+                                    <option value="location4">待付款</option>
+                                    <option value="location5">待审核/线下支付</option>
+                                    <option value="location6">已支付</option>
+                                    <option value="location7">部分支付</option>
+                                    <option value="location8">已取消</option>
+                                </select>
+                            </div>
+                            <div class="mg-top-20">
+                                <label>团&nbsp&nbsp&nbsp&nbsp&nbsp期&nbsp：</label>
+                                <input class="form-control-list" type="text" placeholder="">
+                                <label>下单时间：</label>
+                                <input class="form-control-list" type="text" placeholder="">
+                                <a href="#" class=" btn btn-sm btn-grad text-white mb-0 mg-left-101">搜索</a>
+                                <a href="#" class=" btn btn-sm btn-grad text-white mb-0 mg-left-20">清空查询条件</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-center text-center">
+                            <!-- 添加操作账号Modal -->
+                            <div class="modal fade text-left" id="exampleModalCenterUser" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalCenter" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">添加操作账号</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*用&nbsp户&nbsp名&nbsp:</label>
+                                                    <input class="form-control-uesr" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*真实姓名:</label>
+                                                    <input class="form-control-uesr" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*新&nbsp密&nbsp码&nbsp:</label>
+                                                    <input class="form-control-uesr" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*确认密码:</label>
+                                                    <input class="form-control-uesr" type="text"
+                                                           placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*座&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp机&nbsp:</label>
+                                                    <input class="form-control-uesr" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*手&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp机&nbsp:</label>
+                                                    <input class="form-control-uesr" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*传&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp真&nbsp:</label>
+                                                    <input class="form-control-uesr" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 login-mg-bottom">
+                                                <div class="form-group">
+                                                    <label>*QQ&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                                                    <input class="form-control-uesr" type="text" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消
+                                            </button>
+                                            <button type="button" class="btn btn-primary">确认</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-12 mb-5">
                         <div class="table-responsive-sm">
                             <table class="table table-lg table-noborder table-striped">
                                 <thead class="all-text-white bg-grad">
                                 <tr>
-                                    <th scope="col">获取来源</th>
-                                    <th scope="col">活动详情</th>
-                                    <th scope="col">获取日期</th>
+                                    <th scope="col">产品信息&出发时间</th>
+                                    <th scope="col">订单金额</th>
                                     <th scope="col">状态</th>
-                                    <th scope="col">积分</th>
+                                    <th scope="col">操作</th>
+                                </thead>
+                            </table>
+                            <table class="table table-lg table-noborder table-striped">
+                                <thead class="all-text-white bg-grad">
+                                <tr>
+                                    <th scope="col">
+                                        <p>订单号：1574935141</p>
+                                        <p>下单时间：2019-11-28 17:59:01</p>
+                                    </th>
+                                    <th scope="col">供应商：辽宁自由人国际旅行社</th>
+                                    <th scope="col">联系人：唐微微</th>
+                                    <th scope="col">QQ交谈</th>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">活动获得</th>
-                                    <td><p>就是抽奖活动获得</p></td>
-                                    <td>2019-06-07</td>
-                                    <td>已获得 未过期</td>
-                                    <td>168</td>
+                                    <th scope="row" style="width: 350px">
+                                        <p>
+                                            <span class="color-org">[跟团游] </span>
+                                            <a href="#">
+                                            买一送一【畅游华东】（上海往返） 华东五市+双水乡乌镇、西塘2飞6日 一价全含 全程无自费，全程四星酒店（未挂牌）专业领队陪同</a>
+                                        </p>
+                                        <p>2019-12-02 团号：20191202000001</p>
+                                    </th>
+                                    <td>
+                                        <p>
+                                            <span class="color-org">￥2590</span>
+                                        </p>
+                                        <p>
+                                            <span>成人：1儿童：0</span>
+                                        </p>
+                                    </td>
+                                    <td>已取消</td>
+                                    <td>
+                                        <a href="#">查看详请</a>
+                                    </td>
                                 </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-lg table-noborder table-striped">
+                                <thead class="all-text-white bg-grad">
                                 <tr>
-                                    <th scope="row">活动获得</th>
-                                    <td>就是抽奖活动获得</td>
-                                    <td>2019-06-07</td>
-                                    <td>已获得 未过期</td>
-                                    <td>168</td>
+                                    <th scope="col">
+                                        <p>订单号：1574935141</p>
+                                        <p>下单时间：2019-11-28 17:59:01</p>
+                                    </th>
+                                    <th scope="col">供应商：辽宁自由人国际旅行社</th>
+                                    <th scope="col">联系人：唐微微</th>
+                                    <th scope="col">QQ交谈</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row" style="width: 350px">
+                                        <p>
+                                            <span class="color-org">[跟团游] </span>
+                                            <a href="#">
+                                            买一送一【畅游华东】（上海往返） 华东五市+双水乡乌镇、西塘2飞6日 一价全含 全程无自费，全程四星酒店（未挂牌）专业领队陪同</a>
+                                        </p>
+                                        <p>2019-12-02 团号：20191202000001</p>
+                                    </th>
+                                    <td>
+                                        <p>
+                                            <span class="color-org">￥2590</span>
+                                        </p>
+                                        <p>
+                                            <span>成人：1儿童：0</span>
+                                        </p>
+                                    </td>
+                                    <td>已取消</td>
+                                    <td>
+                                        <a href="#">查看详请</a>
+                                    </td>
                                 </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-lg table-noborder table-striped">
+                                <thead class="all-text-white bg-grad">
                                 <tr>
-                                    <th scope="row">活动获得</th>
-                                    <td>就是抽奖活动获得</td>
-                                    <td>2019-06-07</td>
-                                    <td>已获得 未过期</td>
-                                    <td>168</td>
-                                </tr>
+                                    <th scope="col">
+                                        <p>订单号：1574935141</p>
+                                        <p>下单时间：2019-11-28 17:59:01</p>
+                                    </th>
+                                    <th scope="col">供应商：辽宁自由人国际旅行社</th>
+                                    <th scope="col">联系人：唐微微</th>
+                                    <th scope="col">QQ交谈</th>
+                                </thead>
+                                <tbody>
                                 <tr>
-                                    <th scope="row">活动获得</th>
-                                    <td>就是抽奖活动获得</td>
-                                    <td>2019-06-07</td>
-                                    <td>已获得 未过期</td>
-                                    <td>168</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">活动获得</th>
-                                    <td>就是抽奖活动获得</td>
-                                    <td>2019-06-07</td>
-                                    <td>已获得 未过期</td>
-                                    <td>168</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">活动获得</th>
-                                    <td>就是抽奖活动获得</td>
-                                    <td>2019-06-07</td>
-                                    <td>已获得 未过期</td>
-                                    <td>168</td>
+                                    <th scope="row" style="width: 350px">
+                                        <p>
+                                            <span class="color-org">[跟团游] </span>
+                                            <a href="#">
+                                            买一送一【畅游华东】（上海往返） 华东五市+双水乡乌镇、西塘2飞6日 一价全含 全程无自费，全程四星酒店（未挂牌）专业领队陪同</a>
+                                        </p>
+                                        <p>2019-12-02 团号：20191202000001</p>
+                                    </th>
+                                    <td>
+                                        <p>
+                                            <span class="color-org">￥2590</span>
+                                        </p>
+                                        <p>
+                                            <span>成人：1儿童：0</span>
+                                        </p>
+                                    </td>
+                                    <td>已取消</td>
+                                    <td>
+                                        <a href="#">查看详请</a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="row pull-right-my-integral">
-                            <div class="col-md-12">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
-                                    </ul>
-                                </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 align-self-center text-center">
+        <!-- 修改Modal -->
+        <div class="modal fade text-left" id="exampleModalCenterXG" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenter" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitleXG">修改操作账号</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12 login-mg-bottom">
+                            <label>用&nbsp户&nbsp名&nbsp:</label>
+                            <span class="list-group-item-left">测试用的</span>
+                        </div>
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>真实姓名:</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
                             </div>
                         </div>
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>座&nbsp&nbsp&nbsp&nbsp&nbsp机&nbsp:</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>手&nbsp&nbsp&nbsp&nbsp&nbsp机&nbsp:</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>传&nbsp&nbsp&nbsp&nbsp&nbsp真&nbsp:</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>QQ&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消
+                        </button>
+                        <button type="button" class="btn btn-primary">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 align-self-center text-center">
+        <!-- 冻结Modal -->
+        <div class="modal fade text-left" id="exampleModalCenterDJ" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenter" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitleDJ">冻结操作账号</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        确认操作？
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消
+                        </button>
+                        <button type="button" class="btn btn-primary">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 align-self-center text-center">
+        <!-- 修改密码Modal -->
+        <div class="modal fade text-left" id="exampleModalCenterMM" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenter" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitleMM">修改密码</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>新&nbsp密&nbsp码&nbsp:</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 login-mg-bottom">
+                            <div class="form-group">
+                                <label>确认密码:</label>
+                                <input class="form-control-uesr" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消
+                        </button>
+                        <button type="button" class="btn btn-primary">确认</button>
                     </div>
                 </div>
             </div>
