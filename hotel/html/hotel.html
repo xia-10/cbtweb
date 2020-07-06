@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>酒店列表</title>
+    <link href="../css/ant.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/hotel.css" type="text/css" rel="stylesheet">
+    <link href="../css/select.css" type="text/css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+    <link href="../css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/fontawesome.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div>
+        <div class="header">
+            <div class="header-box" id="logOnOk">
+                <div class="header-left fl">
+                    <p class="company_name fl" style="margin-right:10px !important">测试用的</p>
+                    <p class="user_name fl">公用账号</p><a href="javascript:void(0);" class="logout fl">【退出】 </a>
+                    <a href="#" class="logout fl" style="margin-right: 150px;">旧版本入口</a>
+                </div>
+                <ul class="nav fr">
+                    <li class="fl"><a href="#">消息</a></li>
+                    <li class="fl"><a href="#">我的钱包</a></li>
+                    <li class="fl"><a href="#">系统设置</a></li>
+                    <li class="fl"><a href="#">联系我们</a></li>
+                    <li class="fl no_right_border"><a href="#">积分商城</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-logo">
+            <div class="header-logo-box">
+                <div class="logo fl"><a href="#"></a></div>
+                <div class="city_select">
+                    <div class="start_out_city fl city_up">
+                        <span class="position_img fl"></span>
+                        <div class="city_name fl">
+                            <span class="active-city"></span>
+                            <span>出发</span>
+                        </div>
+                        <span class="fl select_up select_change"></span>
+                    </div>
+                    <div class="citys" style="display: none;">
+                        <ul class="citys_list" id="websites">
+                            <li class="fl">沈阳</li>
+                            <li class="fl">大连</li>
+                            <li class="fl">长春</li>
+                            <li class="fl">哈尔滨</li>
+                            <li class="fl">厦门</li>
+                            <li class="fl">呼和浩特</li>
+                            <li class="fl">包头</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" target="_blank">
+                    <div class="ad fr"></div>
+                </a></div>
+        </div>
+        <div class="navigation">
+            <div class="navigation-box">
+                <ul class="navigation-main">
+                    <li class="fl"><a href="#" class="">工作台</a></li>
+                    <li class="fl"><a href="#" class="active">跟团游</a></li>
+                    <li class="fl"><a href="#" class="">自由行</a></li>
+                    <li class="fl"><a href="#" class="">特价机票</a></li>
+                    <li class="fl"><a href="#" class="">订单中心</a></li>
+                    <li class="fl"><a href="#" class="">流水详情</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content">
+            <div class="content">
+                <div class="tab">
+                    <div class="tab_menu">
+                        <div class="search-box"><input type="text" name="route_name" placeholder="线路名称" class="search">
+                            <button class="btn-search"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="choose">
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">目的地：</label>
+                        <input class="form-control-list" type="text" placeholder="目的地"/>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">关键词：</label>
+                        <input class="form-control-list" type="text" placeholder="酒店名称/地址"/>
+                    </div>
+                    <div class="mg-bottom"><label class="pd-top-8">入住日期：</label>
+                        <div class="form-group">
+                            <span class="far fa-calendar-alt"></span>
+                            <input class="form-control form-control-list mg-left-35" type="text" id="datepicker-1"
+                                   autocomplete="off"
+                                   placeholder="请选择"/>
+                        </div>
+                    </div>
+                    <div class="mg-bottom"><label class="pd-top-8">退房日期：</label>
+                        <div class="form-group">
+                            <span class="far fa-calendar-alt"></span>
+                            <input class="form-control form-control-list mg-left-35" type="text" id="datepicker-2"
+                                   autocomplete="off"
+                                   placeholder="请选择"/>
+                        </div>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">成人：</label>
+                        <select class="custom-select custom-select-list select-big login-pd-left-20">
+                            <option value="0">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">儿童：</label>
+                        <select class="custom-select custom-select-list select-big login-pd-left-20">
+                            <option value="0">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">房间：</label>
+                        <select class="custom-select custom-select-list select-big login-pd-left-20">
+                            <option value="0">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="recommendList" class="recommendList m-b-5"><i class="recommend_mark">推荐</i></div>
+            <div id="tourList" class="linebox">
+                <li class="order_item" id="order-364"><a href="#" target="_blank" class="left_part">
+                    <img src="../img/list.png" alt="no_picture"></a>
+                    <div class="center_part"><a href="#">
+                        <span class="title"> 1桔子酒店精选(成都文殊院地铁站店)</span>
+                    </a>
+                        <div class="listing-rating card-popup-rainingvis bt-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p class="group_type_id">桔子酒店精选(成都文殊院地铁站店)</p>
+                        <p class="list">
+                            <i class="fas fa-map-marker-alt text-danger"></i>
+                            <span>桔子酒店精选(成都文殊院地铁站店)123</span>
+                        </p>
+                        <p class="list">
+                        <span class="d-block mt-2">
+                            <i class="fas fa-lg fa-fw fa-wifi text-success mr-2" title="免费客房WIFI"></i>
+                            <i class="fab fa-lg fa-fw fa-product-hunt text-primary mr-2" title="免费停车场"></i>
+                            <i class="fas fa-lg fa-fw fa-utensils text-primary mr-2" title="中餐厅"></i>
+                            <i class="fas fa-lg fa-fw fa-users text-primary mr-2" title="会议室"></i>
+                            <i class="fas fa-lg fa-fw m-r-10 fa-swimmer text-primary mr-2" title="室内泳池"></i>
+                            <i class="fas fa-lg fa-fw fa-dumbbell text-primary mr-1" title="健身室"></i>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="right_part"><p><span>门市价：</span><i>￥
+                        4580</i><span
+                            style="font-size: 35px; color: rgb(119, 170, 153);">起</span></p><a href="#"
+                                                                                               target="_blank">查看/预定</a>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="pagin">
+            <ul class="ant-pagination paginList">
+                <li title="上一页" tabindex="0" class="ant-pagination-disabled ant-pagination-prev" aria-disabled="true"><a
+                        class="ant-pagination-item-link"></a></li>
+                <li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0">
+                    <a>1</a></li>
+                <li title="下一页" tabindex="0" class="ant-pagination-disabled ant-pagination-next" aria-disabled="true"><a
+                        class="ant-pagination-item-link"></a></li>
+                <li class="ant-pagination-options">
+                    <div class="ant-pagination-options-quick-jumper">跳至
+                        <input type="text" value="">页
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="copyRight">
+        Copyright © 2015-2020 藏宝途（大连）网络科技有限公司 |
+    </div>
+</footer>
+</body>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/functions.js" type="text/javascript"></script>
+<script src="../js/swiper.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/hotel.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,152 @@
+.box {
+    width: 947px;
+    margin: 10px auto;
+    border: 1px solid #c7c7c7;
+    padding: 10px 17px 21px 14px;
+    overflow: hidden;
+}
+.tour_name {
+    font-size: 20px;
+    color: #1d50bd;
+    padding-left: 7px;
+}
+.box-left {
+    width: 470px;
+    margin-top: 16px;
+}
+.box-right {
+    width: 400px;
+    margin: 14px 0 0 30px;
+}
+.swiper-image{
+    width:100%;
+    height:auto;
+}
+span.rack {
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+    background: #ff9419;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 5px 5px 0 0;
+}
+.a-perice {
+    display: inline-block;
+    width: 135px;
+    height: 40px;
+    border: 1px solid #ff9419;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    background-color: #ffffed;
+    margin-right: -5px;
+}
+.iPerice {
+    font-size: 18px;
+    color: #e7154b;
+    font-weight: normal;
+}
+.iperice {
+    font-size: 22px;
+    color: #e7154b;
+    font-weight: normal;
+}
+.box-right-choose{
+    width: 984px;
+    margin-top: 12px;
+}
+.box-right-choose  label {
+    float: left;
+    width: 10%;
+}
+#container {width: 470px;height: 400px;overflow: hidden;margin:0;font-family:"微软雅黑";}
+
+.text-muted {
+    padding: 10px 0;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+.text-muted li{
+        margin-bottom: 2.1rem !important;
+}
+.text-info {
+    color: #17a2b8!important;
+}
+
+
+.immediately_pre {
+    height: 49px;
+    margin-top: 23px;
+}
+.btnbig {
+    padding: 11px 25px !important;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-cbt {
+    display: inline-block;
+    background-color: #f5830a;
+    color: #fff;
+    border: none;
+    padding: 8px 24px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

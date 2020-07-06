@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>酒店详情</title>
+    <link href="../css/ant.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/hotel.css" type="text/css" rel="stylesheet">
+    <link href="../css/hotel_details.css" type="text/css" rel="stylesheet">
+    <link href="../css/select.css" type="text/css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+    <link href="../css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/fontawesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/swiper.min.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=您的密钥"></script>
+</head>
+<body>
+<div class="container">
+    <div>
+        <div class="header">
+            <div class="header-box" id="logOnOk">
+                <div class="header-left fl">
+                    <p class="company_name fl" style="margin-right:10px !important">测试用的</p>
+                    <p class="user_name fl">公用账号</p><a href="javascript:void(0);" class="logout fl">【退出】 </a>
+                    <a href="#" class="logout fl" style="margin-right: 150px;">旧版本入口</a>
+                </div>
+                <ul class="nav fr">
+                    <li class="fl"><a href="#">消息</a></li>
+                    <li class="fl"><a href="#">我的钱包</a></li>
+                    <li class="fl"><a href="#">系统设置</a></li>
+                    <li class="fl"><a href="#">联系我们</a></li>
+                    <li class="fl no_right_border"><a href="#">积分商城</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-logo">
+            <div class="header-logo-box">
+                <div class="logo fl"><a href="#"></a></div>
+                <div class="city_select">
+                    <div class="start_out_city fl city_up">
+                        <span class="position_img fl"></span>
+                        <div class="city_name fl">
+                            <span class="active-city"></span>
+                            <span>出发</span>
+                        </div>
+                        <span class="fl select_up select_change"></span>
+                    </div>
+                    <div class="citys" style="display: none;">
+                        <ul class="citys_list" id="websites">
+                            <li class="fl">沈阳</li>
+                            <li class="fl">大连</li>
+                            <li class="fl">长春</li>
+                            <li class="fl">哈尔滨</li>
+                            <li class="fl">厦门</li>
+                            <li class="fl">呼和浩特</li>
+                            <li class="fl">包头</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" target="_blank">
+                    <div class="ad fr"></div>
+                </a></div>
+        </div>
+        <div class="navigation">
+            <div class="navigation-box">
+                <ul class="navigation-main">
+                    <li class="fl"><a href="#" class="">工作台</a></li>
+                    <li class="fl"><a href="#" class="active">跟团游</a></li>
+                    <li class="fl"><a href="#" class="">自由行</a></li>
+                    <li class="fl"><a href="#" class="">特价机票</a></li>
+                    <li class="fl"><a href="#" class="">订单中心</a></li>
+                    <li class="fl"><a href="#" class="">流水详情</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box">
+            <h1 class="tour_name"> 1桔子酒店精选(成都文殊院地铁站店)</h1>
+            <div class="box-left fl">
+                <div class="banner_tours has-dots" style="width: 470px; height: 258px;">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/list.png" alt="" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/list.png" alt="" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/list.png" alt="" class="swiper-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-right fl">
+                <span class="rack">门市价</span>
+                <br>
+                <a href="javascript:void(0);" class="a-perice" title="结算价:4180">
+                    <i class="iPerice">¥</i><i class="iperice">4580</i>/成人
+                </a>
+                <a href="javascript:void(0);" class="a-perice" title="结算价:3880">
+                    <i class="iPerice">¥</i><i class="iperice">4280</i>/儿童
+                </a>
+                <a href="javascript:void(0);" class="a-perice"><i class="iPerice">¥</i>
+                    <i class="iperice">1380</i> /单房差
+                </a>
+
+                <div class="box-right-choose">
+                    <div class="mg-bottom"><label class="pd-top-8">入住日期：</label>
+                        <div class="form-group">
+                            <span class="far fa-calendar-alt"></span>
+                            <input class="form-control form-control-list mg-left-35" type="text" id="datepicker-1"
+                                   autocomplete="off"
+                                   placeholder="请选择"/>
+                        </div>
+                    </div>
+                    <div class="mg-bottom"><label class="pd-top-8">退房日期：</label>
+                        <div class="form-group">
+                            <span class="far fa-calendar-alt"></span>
+                            <input class="form-control form-control-list mg-left-35" type="text" id="datepicker-2"
+                                   autocomplete="off"
+                                   placeholder="请选择"/>
+                        </div>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">成人：</label>
+                        <select class="custom-select custom-select-list select-big login-pd-left-20">
+                            <option value="0">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">儿童：</label>
+                        <select class="custom-select custom-select-list select-big login-pd-left-20">
+                            <option value="0">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="mg-bottom">
+                        <label class="pd-top-8">房间：</label>
+                        <select class="custom-select custom-select-list select-big login-pd-left-20">
+                            <option value="0">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="immediately_pre">
+                    <button class="btn-cbt btnbig fr">立即预订</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-left fl">
+                <div class="banner_tours has-dots" style="width: 470px;">
+                    <h1>1桔子酒店精选(成都文殊院地铁站店)</h1>
+                    <h3>1桔子酒店精选(成都文殊院地铁站店)</h3>
+                    <div id="container"></div>
+                </div>
+            </div>
+            <div class="box-right fl">
+                <div class="text-block">
+                    <h1>酒店设施</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="list-unstyled text-muted ml-2">
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">网络服务</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">交通设施</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">交通服务</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">休闲娱乐</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">儿童设施</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">前台服务</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">餐饮服务</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">商务服务</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">通用设施</label>:&nbsp;
+                                </li>
+                                <li class="mb-4" style="border-bottom: 1px solid rgb(204, 204, 204);">
+                                    <label class="text-info">其他服务</label>:&nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="copyRight">
+        Copyright © 2015-2020 藏宝途（大连）网络科技有限公司 |
+    </div>
+</footer>
+</body>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/functions.js" type="text/javascript"></script>
+<script src="../js/swiper.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/hotel.js" type="text/javascript"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+    })
+</script>
+<script type="text/javascript">
+    var mp = new BMap.Map("container");
+    mp.centerAndZoom(new BMap.Point(116.3964, 39.9093), 10);
+    mp.enableScrollWheelZoom();
+
+    var canvasLayer = new BMap.CanvasLayer({
+        update: update
+    });
+
+    function update() {
+        var ctx = this.canvas.getContext("2d");
+
+        if (!ctx) {
+            return;
+        }
+
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+        var temp = {};
+        ctx.fillStyle = "rgba(50, 50, 255, 0.7)";
+        ctx.beginPath();
+        var data = [
+            new BMap.Point(116.297047, 39.979542),
+            new BMap.Point(116.321768, 39.88748),
+            new BMap.Point(116.494243, 39.956539)
+        ];
+
+        for (var i = 0, len = data.length; i < len; i++) {
+            var pixel = mp.pointToPixel(data[i]);
+            ctx.fillRect(pixel.x, pixel.y, 30, 30);
+        }
+    }
+
+    mp.addOverlay(canvasLayer);
+    <
+    /html>
