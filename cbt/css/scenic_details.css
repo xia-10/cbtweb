@@ -1,0 +1,217 @@
+
+.TravelGo-category-content-title {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.fl-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.TravelGo-category-content-title-item {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.TravelGo-category-content-title span {
+    text-align: right;
+    display: block;
+    color: #2577e3;
+    font-weight: bold;
+    font-size: 20px;
+}
+.title-sin_map {
+    float: left;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.TravelGo-category-location a {
+    float: left;
+    text-align: left;
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.listing-rating i {
+    color: #dc3545!important;
+}
+.others-details {
+    margin: 0;
+    padding: 20px 0 15px 0;
+}
+.d-flex {
+    display: flex !important;
+}
+.inp-border{
+   width: 39px;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #dfe2e5;
+    background-color: #ffffff;
+}
+#text_box{
+    text-align: center;
+}
+.mg--10{
+     margin-left: -10px;
+}
+.mg--5{
+     margin-left: -5px;
+}
+.mg-left-10{
+    margin-left: 10px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.table td, .booking-section .table th {
+    padding: 8px;
+    vertical-align: top;
+    border-top: none;
+    font-size: 14px;
+}
+.float-right {
+    float: right!important;
+}
+.bookex {
+    color: #2577e3;
+}
+.table {
+    margin-bottom: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+.TravelGo-category-content p {
+    text-align: left;
+    font-size: 12px;
+    color: #999;
+}
+.mb-2, .my-2 {
+    margin-bottom: 1rem!important;
+}
+.text-danger {
+    color: #dc3545!important;
+}
+.TravelGo-opt-list a {
+    float: right;
+    width: 36px;
+    height: 36px;
+    margin-left: 5px;
+    background: #ECF6F8;
+    line-height: 40px;
+    position: relative;
+    color: #999;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+.TravelGo-opt-tooltip {
+    position: absolute;
+    opacity: 0;
+    right: -30px;
+    top: -40px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 100px;
+    margin-left: 0;
+    color: #fff;
+    font-size: 11px;
+    visibility: hidden;
+    border-radius: 4px;
+    background: #2577e3;
+    text-align: center;
+}
+.TravelGo-category-price {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 600;
+    /* background: #F7F9FB; */
+    padding: 3px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+#schedule-box {
+    margin: 0 auto;
+    font-size: 13px;
+    width: 100%;
+    height: auto;
+
+}
+.mg-top-20{
+        margin-top: 20px;
+    display: inline-table;
+}
+.boxnav {
+    border-bottom: 2px solid #4d7de3;
+    border-top: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    border-left: 1px solid #c7c7c7;
+    z-index: 9999;
+    background-color: #fff;
+
+}
+.boxnav ul li {
+    width: 100px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+.a-title {
+    display: inline-block;
+    width: 101px;
+    height: 46px;
+}
+.scenic_active a{
+    background-color: #4d7de3;
+    color: #ffffff !important;
+    border-color: #4d7de3;
+}
+.text-block {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+.con {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

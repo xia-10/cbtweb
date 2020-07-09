@@ -1,0 +1,47 @@
+.box-left {
+    width: 443px;
+    margin-top: 16px;
+}
+.box-right {
+    width: 440px;
+    margin: 14px 0 0 30px;
+}
+.btn-grad {
+    color: #ffffff;
+    background: #2577e3;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-size: 260% 100%;
+    background-position: right bottom;
+    border: 0;
+    line-height: 1.92;
+}
+.TravelGo-category-price {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.text-white {
+    color: #ffffff !important;
+}
+.mg-bt-20{
+    margin-bottom: 20px;
+}
+.text-center{
+    text-align: center!important;
+}
+
+.con {
+    display:none;
+}
+
+.con_two {
+    display:none;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>景点详情</title>
+
+    <link href="../css/ant.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/hotel.css" type="text/css" rel="stylesheet">
+    <link href="../css/hotel_details.css" type="text/css" rel="stylesheet">
+    <link href="../css/scenic_details.css" type="text/css" rel="stylesheet">
+    <link href="../css/scenic_list.css" type="text/css" rel="stylesheet">
+    <link href="../css/select.css" type="text/css" rel="stylesheet">
+    <link href="../css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+    <link href="../css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/fontawesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/swiper.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css">
+    <link href="../css/time.css" type="text/css" rel="stylesheet">
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=您的密钥"></script>-->
+    <style>
+        #container {
+            width: 100% !important;
+            overflow: hidden;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div>
+        <div class="header">
+            <div class="header-box" id="logOnOk">
+                <div class="header-left fl">
+                    <p class="company_name fl" style="margin-right:10px !important">测试用的</p>
+                    <p class="user_name fl">公用账号</p><a href="javascript:void(0);" class="logout fl">【退出】 </a>
+                    <a href="#" class="logout fl" style="margin-right: 150px;">旧版本入口</a>
+                </div>
+                <ul class="nav fr">
+                    <li class="fl"><a href="#">消息</a></li>
+                    <li class="fl"><a href="#">我的钱包</a></li>
+                    <li class="fl"><a href="#">系统设置</a></li>
+                    <li class="fl"><a href="#">联系我们</a></li>
+                    <li class="fl no_right_border"><a href="#">积分商城</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-logo">
+            <div class="header-logo-box">
+                <div class="logo fl"><a href="#"></a></div>
+                <div class="city_select">
+                    <div class="start_out_city fl city_up">
+                        <span class="position_img fl"></span>
+                        <div class="city_name fl">
+                            <span class="active-city"></span>
+                            <span>出发</span>
+                        </div>
+                        <span class="fl select_up select_change"></span>
+                    </div>
+                    <div class="citys" style="display: none;">
+                        <ul class="citys_list" id="websites">
+                            <li class="fl">沈阳</li>
+                            <li class="fl">大连</li>
+                            <li class="fl">长春</li>
+                            <li class="fl">哈尔滨</li>
+                            <li class="fl">厦门</li>
+                            <li class="fl">呼和浩特</li>
+                            <li class="fl">包头</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" target="_blank">
+                    <div class="ad fr"></div>
+                </a></div>
+        </div>
+        <div class="navigation">
+            <div class="navigation-box">
+                <ul class="navigation-main">
+                    <li class="fl"><a href="#" class="">工作台</a></li>
+                    <li class="fl"><a href="#" class="active">跟团游</a></li>
+                    <li class="fl"><a href="#" class="">自由行</a></li>
+                    <li class="fl"><a href="#" class="">特价机票</a></li>
+                    <li class="fl"><a href="#" class="">订单中心</a></li>
+                    <li class="fl"><a href="#" class="">流水详情</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box">
+            <div class="box-left fl">
+                <div class="banner_tours has-dots" style="width: 470px; height: 258px;">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/list.png" alt="" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/list.png" alt="" class="swiper-image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/list.png" alt="" class="swiper-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--日期-->
+                <div class="one_top_left mg-top-20">
+                    <div id='schedule-box' class="boxshaw"></div>
+                </div>
+            </div>
+            <div class="box-right fl">
+                <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                        <h1 class="title-sin_map">
+                            <a href="javascript:void(0);">北京故宫--门票+项目+导览</a>
+                        </h1>
+                        <div class="TravelGo-category-location fl-wrap">
+                            <a href="javascript:void(0);" class="map-item">
+                                <div class="listing-rating card-popup-rainingvis text-right" data-starrating2="7">
+                                    <i class="fab fa-lg fa-fw fa-angular text-danger"></i>
+                                    <i class="fab fa-lg fa-fw fa-angular text-danger"></i>
+                                    <i class="fab fa-lg fa-fw fa-angular text-danger"></i>
+                                    <i class="fab fa-lg fa-fw fa-angular text-danger"></i>
+                                    <i class="fab fa-lg fa-fw fa-angular text-danger"></i>
+                                </div>
+                            </a>
+                            <span class="mb-4 text-right" style="color: rgb(245, 131, 10);">￥299/张</span>
+                        </div>
+
+                        <div class="TravelGo-category-content fl-wrap title-sin_item" style="margin-top: 20px">
+                            <p class="mb-2">
+                                <i class="fas fa-map-marker-alt text-danger"></i> 北京市东城区景山前街4号
+                            </p>
+                            <p class="text-primary mb-2">
+                                <i class="fas fa-tags text-primary"></i> 古迹
+                            </p>
+                            <p class="mb-2">
+                                <i class="far fa-clock text-primary"></i> 4月1日-10月31日（旺季） 周二至周日 08:30-17:00，周一
+                                不开放；11月1日-次年3月31日（淡季） 周
+                            </p>
+                            <p>
+                                <i class="fas fa-comment text-primary"></i> 故宫(上午入园)+珍宝馆+钟表馆+人工讲
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="TravelGo-category-content-title-item others-details">
+                    <div class="d-flex">
+                        <h3 class="title-sin_map">
+                            <a href="#">订单预订</a>
+                        </h3>
+
+                    </div>
+                    <div class="form-group mb-4">
+                        <i class="fas fa-male text-primary"></i><i class="mg-left-10">数量</i>
+
+                        <input id="min" class="inp-border mg-left-10" name="" type="button" value="-" style="outline:medium;"/>
+                        <input id="text_box" class="form-control-list mg--5" name="goodnum" type="text" value="0"
+                               style="width:80px;" disabled="true"/>
+                        <input id="add" class="inp-border mg--10" name="" type="button" value="+" style="outline:medium;"/>
+                        <i class="text-primary ml-2">每订单限制预订2张</i>
+
+                    </div>
+                    <table class="table table-striped mg-top-20">
+                        <tbody>
+                        <tr>
+                            <td class="bookex">预订日期:</td>
+                            <td class="float-right">2020-7-8</td>
+                        </tr>
+                        <tr>
+                            <td class="bookex">数量:</td>
+                            <td class="float-right"><span>1 * </span><span style="color: rgb(245, 131, 10);">￥299</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bookex"><strong>总计:</strong></td>
+                            <td class="float-right"><span style="color: rgb(245, 131, 10);">￥299.00</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="immediately_pre">
+                    <div class="TravelGo-category-content fl-wrap title-sin_item" style="margin-top: 140px">
+                        <div class="TravelGo-category-footer fl-wrap">
+                            <button class="btn-cbt btnbig fr" style="margin-left: 20px">立即预订</button>
+                            <div class="TravelGo-opt-list">
+                                <a href="javascript:void(0);" class="single-map-item">
+                                    <i class="fas fa-print"></i>
+                                    <span class="TravelGo-opt-tooltip">打印行程</span>
+                                </a>
+                                <a href="javascript:void(0);" class="TravelGo-js-favorite">
+                                    <i class="fas fa-hdd"></i>
+                                    <span class="TravelGo-opt-tooltip">下载world</span>
+                                </a>
+                                <a href="javascript:void(0);" class="TravelGo-js-booking">
+                                    <i class="fas fa-barcode"></i>
+                                </a>
+                            </div>
+                            <div class="TravelGo-category-price float-right">
+                                <a target="_blank"
+                                   href="http://wpa.qq.com/msgrd?v=3&amp;uin=1304750384&amp;site=qq&amp;menu=yes">
+                                    <img src="http://wpa.qq.com/pa?p=2:1304750384:51" alt="qq"
+                                         style="vertical-align: text-top;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <div class="box">
+        <div class="boxnav fis_box" style="position: static; top: 0;">
+            <div class="btn">
+                <ul class="nav nav-tabs tab-line sticky-top">
+                    <li class="nav-item scenic_active">
+                        <a class="nav-link borderR a-title"> 预订须知 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link borderR a-title"> 优惠政策 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link borderR a-title"> 温馨提醒 </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="context">
+            <div class="con">
+                <div class="tab-content" style="padding-top: 20px;">
+                    <div class="tab-pane">
+                        <div class="text-block NopaddingDetails">
+                        <h2 class="mb-4 text-primary"
+                            style="padding-bottom: 5px; border-bottom: 1px dotted rgb(221, 221, 221);">
+                            <i class="fas fa-book"></i>预订须知
+                        </h2>
+                        <p class="text-muted font-weight-light pl-3 text-justify" style="white-space: pre-line;">
+                            参观日期确定提交后无法修改，请谨慎选择参观日期，门票预订成功后，请在您选择的参观日期检票入院参观。目前预售期为10天（不含当天）。
+                            一次订单不能超过10人，超过10人请分批次下单，需提供每位出行人身份证预订，且同一出行日期不同订单不能使用同一身份证号码预定。</p></div>
+                    <div class="text-block">
+                        <h2 class="mb-4 text-primary"
+                            style="padding-bottom: 5px; border-bottom: 1px dotted rgb(221, 221, 221);">
+                            <i class="fas fa-traffic-light"></i>交通信息</h2>
+                        <p class="text-muted font-weight-light pl-3 text-justify">北京市东城区景山前街4号</p></div>
+                    <div class="text-block">
+                        <h2 class="mb-4 text-primary"
+                            style="padding-bottom: 5px; border-bottom: 1px dotted rgb(221, 221, 221);">
+                            <i class="fas fa-traffic-light"></i>交通指南</h2>
+                        <div id="container"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con">
+                <div class="text-block NopaddingDetails">
+                        <h2 class="mb-4 text-primary"
+                            style="padding-bottom: 5px; border-bottom: 1px dotted rgb(221, 221, 221);">
+                            <i class="fas fa-american-sign-language-interpreting"></i>
+                            优惠政策</h2>
+                        <p class="text-muted font-weight-light pl-3 text-justify" style="white-space: pre-line;">故宫（上午入园）门票
+                            儿童：6周岁（含6周岁）以下或身高1.2米（含1.2米）以下（有监护人陪同）【免费】；“六一”儿童节，14周岁以下儿童（含）随同家长一人【半价】。
+                            老人：年龄：60周岁（含）以上【优惠】。
+                            学生：1、大、中、小学学生（含港、澳、台学生；不含成人教育、研究生）凭学生证或学校介绍信可购买学生/儿童票；
+                            2、6周岁（不含6周岁）至18周岁（含18周岁）未成年人，可凭身份证、户口本或护照购买学生/儿童票【优惠】。
+                            残疾人：凭残疾人证件【免费】。
+                            军人：“八一”建军节，现役军人凭有效证件【免费】。
+                            离休干部：凭离休证【免费】。
+                            低保人员：持有本市城乡居民最低生活保障金领取证的人员凭有效证件【半价】。
+                            女性：三八”妇女节，女性观众享受【半价】。
+                            以上信息仅供参考，具体信息请以故宫当天披露为准。
+                            故宫（下午入园）门票
+                            儿童：6周岁（含6周岁）以下或身高1.2米（含1.2米）以下（有监护人陪同）【免费】；“六一”儿童节，14周岁以下儿童（含）随同家长一人【半价】。
+                            老人：年龄：60周岁（含）以上【优惠】。
+                            学生：大、中、小学学生（含港、澳、台学生；不含成人教育、研究生）凭学生证或学校介绍信可购买学生/儿童票；6周岁（不含6周岁）至18周岁（含18周岁）未成年人，可凭身份证、户口本或护照购买学生/儿童票【优惠】。
+                            残疾人：凭残疾人证件【免费】。
+                            军人：“八一”建军节，现役军人凭有效证件【免费】。
+                            离休干部：凭离休证【免费】。
+                            低保人员：持有本市城乡居民最低生活保障金领取证的人员凭有效证件【半价】。
+                            女性：三八”妇女节，女性观众享受【半价】。
+                            以上信息仅供参考，具体信息请以故宫当天披露为准。
+                            故宫（当日票）门票
+                            儿童：6周岁（含6周岁）以下或身高1.2米（含1.2米）以下（有监护人陪同）【免费】；“六一”儿童节，14周岁以下儿童（含）随同家长一人【半价】。
+                            老人：年龄：60周岁（含）以上【优惠】。
+                            学生：大、中、小学学生（含港、澳、台学生；不含成人教育、研究生）凭学生证或学校介绍信可购买学生/儿童票；6周岁（不含6周岁）至18周岁（含18周岁）未成年人，可凭身份证、户口本或护照购买学生/儿童票【优惠】。
+                            残疾人：凭残疾人证件【免费】。
+                            离休干部：凭离休证【免费】。
+                            军人：“八一”建军节现役军人凭有效证件【免费】。
+                            低保人员：持有本市城乡居民最低生活保障金领取证的人员凭有效证件【半价】。
+                            女性：三八”妇女节，女性观众享受【半价】。
+                            以上信息仅供参考，具体信息请以故宫当天披露为准。
+                            故宫门票
+                            儿童：6周岁（含6周岁）以下或身高1.2米（含1.2米）以下（有监护人陪同）【免费】；“六一”儿童节，14周岁以下儿童（含）随同家长一人【半价】。
+                            老人：60周岁（含）以上【半价】。
+                            学生：大、中、小学学生（含港、澳、台学生；不含成人教育、研究生）凭学生证或学校介绍信可购买学生/儿童票；6周岁（不含6周岁）至18周岁（含18周岁）未成年人，可凭身份证、户口本或护照购买学生/儿童票。（国外友人超18岁不适用学生票）
+                            【半价】。
+                            残疾人：凭残疾人证件【免费】。
+                            军人：“八一”建军节，现役军人凭有效证件【免费】。
+                            离休干部：凭离休证【免费】。
+                            低保人员：持有本市城乡居民最低生活保障金领取证的人员凭有效证件【半价】。
+                            女性：三八”妇女节，女性观众享受【半价】。
+                            以上信息仅供参考，具体信息请以故宫当天披露为准。</p></div>
+
+            </div>
+            <div class="con">
+                 <div class="text-block NopaddingDetails">
+                        <h2 class="mb-4 text-primary"
+                            style="padding-bottom: 5px; border-bottom: 1px dotted rgb(221, 221, 221);">
+                            <i class="fas fa-info"></i> 温馨提醒
+                        </h2>
+                        <p class="text-muted font-weight-light pl-3 text-justify" style="white-space: pre-line;">
+                            法定节假日前后期间，天安门广场安检严格，会出现排队安检的情况，建议您提早出行，以免耽误行程安排。
+                            如小龄儿童没有身份证的，需带户口本，预定时填写孩子的身份证号，入园时候除了刷身份证，也可以输入身份证号码来验证，但如遇景区临时抽查，不保证能顺利入园，故请携带好相关证件。
+                            所有通过网上预定的客人经午门（南门）专用入口快速检票通过。
+                            如遇景区电子票验证通道检修，需要客人配合到指定窗口换取验票凭证入园，敬请谅解！
+                            开闭馆时间：故宫博物院全年开放，开放时间按照淡、旺季会有所改变，遇到法定假期也会延长或缩短开放时间，请随时注意故宫网站的公告。
+                            请观众避开每天11:00至14:00参观故宫博物院的高峰时段，一头一尾参观更舒适。
+                            建议错开观众密集的中轴线，关注故宫博物院举办的各类展览，比如文华殿陶瓷馆、景仁宫捐献文物精品展、承乾宫及永和宫的青铜器馆等。
+                            自2011年7月2日起，故宫博物院实行自南向北单向参观路线：午门（南门）只作为参观入口，观众一律从午门进入故宫；神武门（北门）只作为参观出口，观众参观结束后可由神武门或东华门（东门）离开故宫。
+                            请不要轻信和接受社会散杂人员派发的各种广告和兜售的商品。严防上当受骗，并欢迎举报。
+                            在开放时间即将结束时，请注意广播和工作人员的提示，尽快结束参观。
+                            如果您在参观中遇到急难情况，请不要惊慌，就近寻求我院工作人员的帮助。
+                            如果您与亲友在参观中走失，可到景运门内西南侧的广播室通知他们。
+                            故宫博物院是公共开放场所，为确保您的人身安全，如遇人群密集时，请听从工作人员的疏导，有序参观，不要拥挤。
+                            园内须知：景区活动内容如有变动，以当日公告为准。景区所有项目均会定期进行日检、周检、月检和年度检修，相关检修工作可能会造成部分项目运行时间的延迟或暂停对游客开放，详情以景区现场公告为准。
+                            您应随时看管好您的私人财物，并自行为其安全负责。
+                            入园禁止携带：宠物及其他动物；烟花、爆竹等易燃易爆品，有害、有毒物； 管制刀具、枪支及法律规定的危险物品。
+                            不可在景区内使用相机/手机/手提摄像机的伸缩杆（例如自拍杆）。
+                            园内禁止活动：请您文明参观，为了您和他人的健康，请勿随地吐痰，
+                            不乱丢垃圾、不攀爬山石、不乱刻乱画、不翻越护栏，不要吸烟，遵守规则，维护整洁有序的参观环境，共同保护文化遗产。在景区内所有河道游泳、未被允许的水上活动或公众水域垂钓。未经许可，超出正常游览观光用途的摄影、摄像、录音、航拍或任何形式的记录、广播或传送，包括但不限于：借用专业摄影、摄像器材、辅助道具、非日常生活服装进行拍摄等（如有婚纱摄影类需求，须先向景区管理部门提交申请，获准后，签订拍摄协议并支付相关费用，按协议和相关规定在指定区域开展活动，建议事先向景区管理方咨询）。
+                            客流较大时，在桥面、街道狭窄处用三脚架进行拍摄。 在禁烟场所吸烟、使用明火。 在景区内点放各类形式的焰火、天灯，包括但不限于燃放烟花爆竹和孔明灯等。
+                            攀折树木、采摘花果，各种形式的狩猎，捕捉、打捞水生动物及植物。 强行进入未开放的场馆、施工区域。 破坏生态、污染环境、危害文物之行为。
+                            其它妨碍游客休闲度假、违反公共秩序、有害本历史街区保护或其相关设施之运作的行为。</p></div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</div>
+<footer>
+    <div class="copyRight">
+        Copyright © 2015-2020 藏宝途（大连）网络科技有限公司 |
+    </div>
+</footer>
+</body>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/functions.js" type="text/javascript"></script>
+<script src="../js/swiper.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/hotel.js" type="text/javascript"></script>
+<script src="../js/time.js" type="text/javascript"></script>
+<script>
+    var mp = new BMap.Map("container");
+    mp.centerAndZoom(new BMap.Point(116.3964, 39.9093), 10);
+    mp.enableScrollWheelZoom();
+
+    var canvasLayer = new BMap.CanvasLayer({
+        update: update
+    });
+
+    function update() {
+        var ctx = this.canvas.getContext("2d");
+
+        if (!ctx) {
+            return;
+        }
+
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+        var temp = {};
+        ctx.fillStyle = "rgba(50, 50, 255, 0.7)";
+        ctx.beginPath();
+        var data = [
+            new BMap.Point(116.297047, 39.979542),
+            new BMap.Point(116.321768, 39.88748),
+            new BMap.Point(116.494243, 39.956539)
+        ];
+
+        for (var i = 0, len = data.length; i < len; i++) {
+            var pixel = mp.pointToPixel(data[i]);
+            ctx.fillRect(pixel.x, pixel.y, 30, 30);
+        }
+    }
+
+    mp.addOverlay(canvasLayer);
+</script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+    });
+    var mySchedule = new Schedule({
+        el: '#schedule-box'
+    });
+</script>
+</html>
